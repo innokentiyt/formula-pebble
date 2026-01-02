@@ -1,0 +1,31 @@
+{
+  "name": "formula-pebble",
+  "author": "innokentiyt",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "formula",
+    "uuid": "dd680c76-fbdc-4e4d-89d5-0c0dd716b880",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+#include "types.h"
+
+#define POINTS 8
+
+extern Point3D vs[POINTS];
+
+#define LINES 12
+
+extern int lines[LINES][2];
