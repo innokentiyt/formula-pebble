@@ -2,6 +2,8 @@
 
 <img src="scr.jpg" width="450">
 
+Get it on Rebble Appstore: https://apps.rebble.io/en_US/application/6958f4e091ea9d0009ebd756 (all current models supported)
+
 Based on The Source Code from this YouTube Video from Tsoding:
 
 [![thumbnail](https://github.com/tsoding/formula/raw/main/imgs/thumbnail.png)](https://www.youtube.com/watch?v=qjWkNZ0SXfo)
