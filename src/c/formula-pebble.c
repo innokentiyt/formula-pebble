@@ -1,8 +1,17 @@
 #include <pebble.h>
 #include "penger.h"
 
-const int WIDTH = 144;
-const int HEIGHT = 168;
+#if defined(PBL_DISPLAY_WIDTH)
+    const int WIDTH = PBL_DISPLAY_WIDTH;
+#else
+    const int WIDTH = 144;
+#endif
+
+#if defined(PBL_DISPLAY_HEIGHT)
+    const int HEIGHT = PBL_DISPLAY_HEIGHT;
+#else
+    const int HEIGHT = 168;
+#endif
 
 #define ASPECT ((float)WIDTH / (float)HEIGHT)
 
@@ -62,6 +71,7 @@ static void draw_frame(Layer *layer, GContext *ctx)
     float s = (float)sin_lookup(angle) / TRIG_MAX_RATIO;
     graphics_context_set_stroke_width(ctx, 1);
     graphics_context_set_stroke_color(ctx, GColorBlack);
+    graphics_context_set_antialiased(ctx, false);
 
     for (int i = 0; i < LINES; i++)
     {
